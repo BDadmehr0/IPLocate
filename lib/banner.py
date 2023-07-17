@@ -13,6 +13,6 @@ def Banner():
  _ ___ _   __   ___ __ _____ ___  .@@@@
 | | _,\ | /__\ / _//  \_   _| __| @*  @@
 | | v_/ || \/ | \_| /\ || | | _|   @@@@
-|_|_| |___\__/ \__/_||_||_| |___|   @@\n V.{v} BDadmehr0 | IP Address Lookup'''
+|_|_| |___\__/ \__/_||_||_| |___|   @@\n V.{v} BDadmehr0 | IP Address Lookup\n'''
 
   return ascii_banner

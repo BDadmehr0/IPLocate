@@ -1,2 +1,2 @@
 # IPLocate
-Script IP to location
+Script IP Address Lookup
