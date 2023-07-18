@@ -1,0 +1,9 @@
+{
+  "message": "Validation error",
+  "errors": {
+    "ip": [
+      "The ip must be a valid IP address."
+    ]
+  },
+  "info": "For more information, see documentation: https://ipbase.com/docs/status-codes#_422"
+}
