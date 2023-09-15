@@ -4,11 +4,11 @@ from requests import get
 
 def Banner():
   v = get('https://raw.githubusercontent.com/BDadmehr0/IPLocate/master/lib/version?token=GHSAT0AAAAAACE6HCQBAXC3U4SQVX6E6AUCZFV2IXQ').text
-  loc_st = f'''
-    .@@@@
-    @*  @@
-     @@@@
-      @@ '''
+  
+    # .@@@@
+    # @*  @@
+    #  @@@@
+    #   @@
    
   ascii_banner = f'''{F.GREEN}{S.DIM}
   _ ___ _   __   ___ __ _____ ___  .@@@@
