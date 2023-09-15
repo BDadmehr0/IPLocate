@@ -25,6 +25,9 @@ def main_APP(ip):
 
 
     response = requests.get(f'https://whatismyipaddress.com/ip/{ip}', cookies=cookies, headers=headers)
+    div_element = soup.find('div', class_='ip-detail expanded')
+    text = div_element.text.strip()  # حذف فاصله‌های اضافی از متن
+    print(text)
     # json_object = json.loads(response)
     # json_formatted_str = json.dumps(json_object, indent=2)
 
