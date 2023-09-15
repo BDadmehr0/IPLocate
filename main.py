@@ -9,11 +9,11 @@ class style:
     dne = f'\n{F.WHITE}[{F.GREEN}+{F.WHITE}]{F.RESET} ' # Done ascii msg
 
 def main():
+    
     try:
-        ip = str(input(f'{F.YELLOW}IPv4, IPv6 or Domain name ~$ '))
-        Handel = main_APP(ip=ip)
+        ip = str(input(f'{F.YELLOW}Pv4, IPv6 or Domain name ~$ '))
         print(style.dne+f'Done info saved to /lib/info.json\n')
-        print(Handel)
+        main_APP(ip=ip)
     except KeyboardInterrupt:
         exit()
 
