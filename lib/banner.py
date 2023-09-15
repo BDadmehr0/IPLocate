@@ -11,9 +11,9 @@ def Banner():
       @@ '''
    
   ascii_banner = f'''{F.GREEN}{S.DIM}
- _ ___ _   __   ___ __ _____ ___  .@@@@
-| | _,\ | /__\ / _//  \_   _| __| @*  @@
-| | v_/ || \/ | \_| /\ || | | _|   @@@@
-|_|_| |___\__/ \__/_||_||_| |___|   @@\n {S.BRIGHT}{F.BLUE}V{v}{S.NORMAL} BDadmehr0 | IP Address Lookup\n{F.YELLOW}'''
+  _ ___ _   __   ___ __ _____ ___  .@@@@
+ | | _,\ | /__\ / _//  \_   _| __| @*  @@
+ | | v_/ || \/ | \_| /\ || | | _|   @@@@
+ |_|_| |___\__/ \__/_||_||_| |___|   @@\n {S.BRIGHT}{F.BLUE}V{v}{S.NORMAL} BDadmehr0 | IP Address Lookup\n{F.YELLOW}'''
 
   return ascii_banner
