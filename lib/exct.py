@@ -28,15 +28,15 @@ def main_APP(ip):
     }
 
     response = requests.get('https://api.ipbase.com/v2/info', params=params, headers=headers)
-
     if response.status_code == 200:
-        return style.dne + f'Get info\n'
+        json_object = json.loads(response.text)
+        json_formatted_str = json.dumps(json_object, indent=2)
+
+        # open and read the file after the appending:
+        with open('info.json', 'w') as json_file:
+            json_file.write(json_formatted_str)
+        return style.dne + f'Info saved to info.json\n'
     else:
-        return style.fil + f'Error with get info  {response.status_code}\n'
+        return style.dne + f'Get info failed with status code {response.status_code}\n'
 
-    json_object = json.loads(response.text)
-    json_formatted_str = json.dumps(json_object, indent=2)
 
-    with open('info.json', 'w') as json_file:
-        json_file.write(json_formatted_str)
-        return style.wrn + f'Info saved to {info_file_name}\n'
