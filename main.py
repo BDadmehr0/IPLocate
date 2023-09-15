@@ -11,9 +11,9 @@ class style:
 def main():
     while True:
         try:
-            ip = str(input(f'{F.YELLOW}Pv4, IPv6 or Domain name ~$ '))
-            print(style.dne+f'Done info saved to /lib/info.json\n')
+            ip = str(input(f'{F.YELLOW}IPv4, IPv6 or Domain name ~$ '))
             main_APP(ip=ip)
+            print(style.dne+f'Done info saved to /lib/info.json\n')
         except KeyboardInterrupt:
             exit()
 
