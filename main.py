@@ -9,13 +9,13 @@ class style:
     dne = f'\n{F.WHITE}[{F.GREEN}+{F.WHITE}]{F.RESET} ' # Done ascii msg
 
 def main():
-    while True:
-        try:
-            ip = str(input(f'{F.YELLOW}IPv4, IPv6 or Domain name ~$ '))
-            main_APP(ip=ip)
-            print(style.dne+f'Done info saved to /lib/info.json\n')
-        except KeyboardInterrupt:
-            exit()
+    try:
+        ip = str(input(f'{F.YELLOW}IPv4, IPv6 or Domain name ~$ '))
+        Handel = main_APP(ip=ip)
+        print(style.dne+f'Done info saved to /lib/info.json\n')
+        print(Handel)
+    except KeyboardInterrupt:
+        exit()
 
 if __name__ == '__main__':
     print(banner)
