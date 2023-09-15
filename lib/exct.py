@@ -35,4 +35,4 @@ def main_APP(ip):
     #open and read the file after the appending:
     with open('info.json', 'w') as json_file:
         json_file.write(json_formatted_str)
-        print(style.dne+f'Done info saved to info.json\n')
+        return style.dne+f'Done info saved to info.json\n'

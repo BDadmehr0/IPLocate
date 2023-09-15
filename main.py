@@ -2,11 +2,6 @@ from lib.banner import Banner
 from lib.exct import main_APP
 from colorama import Fore as F; from colorama import Style as S
 
-banner = Banner()
-class style:
-    wrn = f'\n{F.WHITE}[{F.YELLOW}-{F.WHITE}]{F.RESET} ' # Warning ascii msg
-    fil = f'\n{F.WHITE}[{F.RED}x{F.WHITE}]{F.RESET} ' # Fail ascii msg
-    dne = f'\n{F.WHITE}[{F.GREEN}+{F.WHITE}]{F.RESET} ' # Done ascii msg
 
 def main():
     
@@ -17,5 +12,6 @@ def main():
         exit()
 
 if __name__ == '__main__':
+    banner = Banner()
     print(banner)
     main()
