@@ -1,8 +1,8 @@
-from colorama import Fore as F; from colorama import Style as S
-
 import json
 import requests
 
+from colorama import Fore as F; from colorama import Style as S
+from bs4 import BeautifulSoup
 
 def main_APP(ip):
         
@@ -25,7 +25,7 @@ def main_APP(ip):
 
 
     response = requests.get(f'https://whatismyipaddress.com/ip/{ip}', headers=headers)
-    div_element = soup.find('div', class_='ip-detail expanded')
+    div_element = BeautifulSoup.soup.find('div', class_='ip-detail expanded')
     text = div_element.text.strip()  # حذف فاصله‌های اضافی از متن
     
     # json_object = json.loads(response)
