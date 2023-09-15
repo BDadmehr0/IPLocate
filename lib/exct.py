@@ -24,13 +24,13 @@ def main_APP(ip):
 
 
 
-    response = requests.get(f'https://whatismyipaddress.com/ip/{ip}', cookies=cookies, headers=headers)
+    response = requests.get(f'https://whatismyipaddress.com/ip/{ip}', headers=headers)
     div_element = soup.find('div', class_='ip-detail expanded')
     text = div_element.text.strip()  # حذف فاصله‌های اضافی از متن
-    print(text)
+    
     # json_object = json.loads(response)
     # json_formatted_str = json.dumps(json_object, indent=2)
 
     #open and read the file after the appending:
-    # with open('info.json', 'w') as json_file:
-    #     json_file.write(json_formatted_str)
+    with open('info.json', 'w') as json_file:
+        json_file.write(text)
