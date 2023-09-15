@@ -1,7 +1,5 @@
 import json
 import requests
-from colorama import Fore as F
-from colorama import Style as S
 from bs4 import BeautifulSoup
 
 def main_APP(ip):
