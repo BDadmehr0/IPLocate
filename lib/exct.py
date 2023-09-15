@@ -1,8 +1,12 @@
-from colorama import Fore as F; from colorama import Style as S
-
 import json
 import requests
 
+from colorama import Fore as F; from colorama import Style as S
+
+class style:
+    wrn = f'\n{F.WHITE}[{F.YELLOW}-{F.WHITE}]{F.RESET} ' # Warning ascii msg
+    fil = f'\n{F.WHITE}[{F.RED}x{F.WHITE}]{F.RESET} ' # Fail ascii msg
+    dne = f'\n{F.WHITE}[{F.GREEN}+{F.WHITE}]{F.RESET} ' # Done ascii msg
 
 def main_APP(ip):
         
@@ -31,3 +35,4 @@ def main_APP(ip):
     #open and read the file after the appending:
     with open('info.json', 'w') as json_file:
         json_file.write(json_formatted_str)
+        print(style.dne+f'Done info saved to info.json\n')

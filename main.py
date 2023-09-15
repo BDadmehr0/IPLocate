@@ -12,8 +12,7 @@ def main():
     
     try:
         ip = str(input(f'{F.YELLOW}Pv4, IPv6 or Domain name ~$ '))
-        print(style.dne+f'Done info saved to /lib/info.json\n')
-        main_APP(ip=ip)
+        print(main_APP(ip=ip))
     except KeyboardInterrupt:
         exit()
 
